@@ -1,0 +1,199 @@
+/* Overall Container */
+.players-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("../images/home_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #000;
+  font-family: "Arial", sans-serif;
+  padding-top: 140px;
+}
+
+/* Header */
+.players-header {
+  margin-top: 8px; /* Adjust based on the height of your navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  position: fixed; /* Fixed header below navbar */
+  top: 70px; /* Push down to be under navbar */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the margin-top of the main content to prevent it from overlapping with the header */
+.players-main {
+  /* margin-top: 0px; Adjust this value to match the height of the header */
+  /* padding: 2rem 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Title */
+.players-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: antiquewhite;
+}
+
+/* Header Actions (Search Input + Add Player Button) */
+.header-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-player-button {
+  padding: 10px 50px;
+  background-color: #3e74e9; /* Sky blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.add-player-button:hover {
+  background-color: #1e90ff; /* Darker blue on hover */
+}
+
+/* Add Player Form */
+.players-addplayer {
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slight background for readability */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.players-addplayer input[type="text"] {
+  width: calc(100% - 22px); /* Full width minus padding */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.player-roles {
+  margin-bottom: 10px;
+}
+
+.player-roles label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #3e74e9; /* Sky blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1e90ff; /* Darker blue on hover */
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* Adjust header size */
+  .players-header h1 {
+    font-size: 2rem;
+  }
+
+  /* Adjust search input and button for smaller screens */
+  .header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .add-player-button {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .players-main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust header font size */
+  .players-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .players-addplayer {
+    margin-top: 5rem;
+    padding: 1rem;
+  }
+
+  /* Adjust the search input and button for mobile screens */
+  .search-input {
+    font-size: 12px;
+  }
+
+  .add-player-button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .players-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .players-main {
+    padding: 1rem;
+  }
+
+  .add-player-button {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+
+  .players-addplayer input[type="text"] {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}

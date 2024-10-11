@@ -1,0 +1,64 @@
+.contact-us-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black  ;
+}
+
+.contact-us-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-us-container form {
+  margin-top: 20px;
+}
+
+.contact-us-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-us-container input,
+.contact-us-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-us-container button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-us-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.contact-us-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us-container li {
+  margin-bottom: 10px;
+}
+
+.contact-us-container i {
+  font-size: 18px;
+  margin-right: 10px;
+}

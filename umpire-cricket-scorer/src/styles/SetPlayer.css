@@ -1,0 +1,72 @@
+/* SetPlayer.css */
+.container {
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f4f4f9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: #00796b;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+.button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #004d40;
+}
+
+.info {
+  margin-top: 20px;
+  background-color: #b2dfdb;
+  padding: 20px;
+  border-radius: 12px;
+  color: #153c35;
+}

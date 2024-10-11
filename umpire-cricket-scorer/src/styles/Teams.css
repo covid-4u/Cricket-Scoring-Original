@@ -1,0 +1,269 @@
+/* Overall Container */
+.teams-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("../images/home_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #000;
+  /* Black Text */
+  font-family: "Arial", sans-serif;
+  padding-top: 140px;
+}
+
+/* Header */
+.teams-header {
+  margin-top: 76px; /* Adjust based on the height of your navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  position: fixed; /* Fixed header below navbar */
+  top: 70px; /* Push down to be under navbar */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teams-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+/* Main Content */
+.teams-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.teams-list {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.teams-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teams-container li button {
+  background-color: #ff6347;
+  /* Tomato red */
+  margin-left: 10px;
+}
+
+.teams-container li button:hover {
+  background-color: #ff4500;
+  /* Darker red on hover */
+}
+
+.teams-container button {
+  justify-self: right;
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #3e74e9;
+  /* Sky blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+.teams-container button:hover {
+  background-color: #1e90ff;
+  /* Darker blue on hover */
+}
+
+.teams-container input[type="text"] {
+  width: 46%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.teams-addteam {
+  margin-left: 385px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  justify-content: space-between;
+}
+
+.faq-container {
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 0px solid #ccc;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.faq-checkbox {
+  display: none;
+}
+
+.faq-question {
+  display: block;
+  background-color: #fff;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-question::after {
+  content: "\002B";
+  /* Plus symbol */
+  /* position: absolute; */
+  right: 20px;
+  font-size: 24px;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.faq-checkbox:checked + .faq-question::after {
+  transform: rotate(45deg);
+  /* Rotate to make it a minus symbol */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 4 columns */
+  gap: 10px;
+  /* Space between boxes */
+  background-color: #f0f0f0;
+  padding: 0 15px;
+  font-size: 14px;
+  transition: max-height 0.1 ease;
+}
+.faq-checkbox:checked + .faq-question + .faq-answer {
+  max-height: 200px;
+  /* Adjust this value based on content height */
+  padding: 15px;
+}
+
+.stat-box {
+  border: 1px solid #ddd;
+  /* Border around each box */
+  padding: 5px;
+  /* Reduced padding inside each box */
+  border-radius: 4px;
+  /* Rounded corners */
+  background-color: #f9f9f9;
+  /* Background color */
+  font-size: 14px;
+  /* Font size */
+  text-align: center;
+  /* Center text horizontally */
+}
+
+.teams-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% opacity */
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.teams-container {
+  margin-top: 60px; /* Add margin to avoid content being hidden under the fixed header */
+}
+
+.teams-search-bar {
+  width: 200px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.teams-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.teams-header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.teams-search-bar {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+@media (max-width: 480px) {
+  .teams-container {
+    padding: 0.5rem;
+    margin-top: 50px;
+  }
+
+  .teams-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .teams-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .teams-list {
+    max-width: 100%;
+  }
+}
+
+/* Tablet and larger screens */
+@media (max-width: 768px) {
+  .teams-container {
+    padding: 1rem;
+    margin-top: 50px; /* Adjust for smaller devices */
+  }
+
+  .teams-header {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq-answer {
+    grid-template-columns: repeat(
+      4,
+      1fr
+    ); /* Restore 4-column layout for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq-answer {
+    grid-template-columns: repeat(5, 1fr); /* 5 columns for desktop */
+  }
+}
