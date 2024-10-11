@@ -1,1 +1,1 @@
-# Cricket-Scoring-Original
+# Go to the master branch
